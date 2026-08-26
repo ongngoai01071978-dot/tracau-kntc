@@ -1,0 +1,6 @@
+{
+  "name": "Dashboard Tiếp Công Dân và Khiếu Nại Tố Cáo Phường Trà Câu",
+  "description": "ỦY BAN NHÂN DÂN PHƯỜNG TRÀ CÂU - HỆ THỐNG QUẢN LÝ TIẾP CÔNG DÂN VÀ GIẢI QUYẾT ĐƠN THƯ KHIẾU NẠI TỐ CÁO",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

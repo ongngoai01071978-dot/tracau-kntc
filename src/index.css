@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* 1. Theme: Chế độ trang trọng / Hội nghị */
+.theme-ceremonial {
+  --theme-bg: #1c0a0c;
+  --theme-surface: #2a1115;
+  --theme-card: #200d10;
+  --theme-border: #52181f;
+  --theme-accent: #dc2626;
+  --theme-gold: #d97706;
+}
+
+.theme-ceremonial body {
+  background-color: #1a080a;
+  color: #fef2f2;
+}
+
+/* 2. Theme: Chế độ ban đêm / Trung tâm điều hành */
+.theme-command-center {
+  --theme-bg: #030712;
+  --theme-surface: #0b1329;
+  --theme-card: #0f172a;
+  --theme-border: #1e293b;
+  --theme-accent: #06b6d4;
+  --theme-gold: #f59e0b;
+}
+
+.theme-command-center body {
+  background-color: #030712;
+  color: #f8fafc;
+}
+
+/* 3. Theme: Chế độ sáng chuẩn văn phòng */
+.theme-standard-office {
+  --theme-bg: #f8fafc;
+  --theme-surface: #f1f5f9;
+  --theme-card: #ffffff;
+  --theme-border: #e2e8f0;
+  --theme-accent: #dc2626;
+  --theme-gold: #d97706;
+}
+
+.theme-standard-office body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Custom scrollbar helpers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, nav, button, .print\:hidden {
+    display: none !important;
+  }
+}
